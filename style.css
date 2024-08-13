@@ -1,6 +1,25 @@
 #charset "UTF-8";
 
+body {
+    background-color: white;
+}
+
 header {
     background-color: black;
     color: white;    
+}
+
+header > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 6em;
+    text-align: center;
+    padding: 20px;
+    margin: 0px 10px;
+}
+header > p {
+    font-size: 1em;
+    text-align: center;
+    padding: 20px;
+    margin: 0px 10px;
 }
