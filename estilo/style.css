@@ -1,11 +1,7 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+#charset "UTF-8";
 
 @font-face {
-    font-family: "Passion-one";
+    font-family: "Passion one";
     src: url(fontes/PassionOne-Regular.ttf) format(truetype);
 }
 
@@ -14,9 +10,15 @@
     src: url(fontes/Sriracha-Regular.ttf) format(truetype);
 }
 
+* {
+    padding: 0px;
+    margin: 0px;    
+}
+
 html, body {
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte01);
 }
 
 header {
@@ -26,9 +28,10 @@ header {
 }
 
 header > h1 {
-    font-family: "Passion-one";
+    font-family: "Passion one";
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw
 }
 
 header > p {
@@ -49,7 +52,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: "Passion-one";
+    font-family: "Sriracha";
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -61,7 +65,8 @@ section.imagem {
     color: white;
 }
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.507);
 }
 
