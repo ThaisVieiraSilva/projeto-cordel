@@ -1,20 +1,5 @@
 #charset "UTF-8";
 
-@font-face {
-    font-family: "Passion one";
-    src: url(fontes/PassionOne-Regular.ttf) format(truetype);
-}
-
-@font-face {
-    font-family: "Sriracha";
-    src: url(fontes/Sriracha-Regular.ttf) format(truetype);
-}
-
-* {
-    padding: 0px;
-    margin: 0px;    
-}
-
 html, body {
     background-color: darkgray;
     min-height: 100vh;
@@ -24,7 +9,9 @@ html, body {
 header {
     background-color: black;
     color: white;
-    text-align: center;  
+    text-align: center; 
+    
+    
 }
 
 header > h1 {
@@ -55,6 +42,9 @@ section {
     font-family: "Sriracha";
     font-size: 3.5vw;
 }
+section > p {
+    padding-bottom: 2em;
+}
 
 section.normal {
     background-color: white;
@@ -63,11 +53,23 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.459);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.205);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0, 0.247);
+    text-shadow: 1px 1px 0px black;
+}
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer {
